@@ -18,7 +18,8 @@ class MahasiswaController extends Controller
         return view('Mahasiswa', $data);
     }
 
-    public function editMahasiswa($id){
+    public function editMahasiswa($id)
+    {
         $data = ['mahasiswa' => $this->Mahasiswa->getOneData($id),
                 'title' => "Edit Mahasiswa"];
         return view('editMahasiswa', $data);
